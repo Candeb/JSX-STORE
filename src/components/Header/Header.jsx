@@ -35,10 +35,7 @@ export const Header = () => {
       <Wrapper>
         <Link to="/">
           <LogoContainer>
-            <img
-              src="https://github.com/Candeb/JSX-STORE/blob/main/src/assets/logo.png?raw=true"
-              alt="Logo"
-            />
+            <img src="assets/logo.png" alt="Logo" />
           </LogoContainer>
         </Link>
 
