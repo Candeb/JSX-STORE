@@ -35,7 +35,7 @@ export const Header = () => {
       <Wrapper>
         <Link to="/">
           <LogoContainer>
-            <img src="src\assets\logo.png" alt="Logo" />
+            <img src="src/assets/logo.png" alt="Logo" />
           </LogoContainer>
         </Link>
 
