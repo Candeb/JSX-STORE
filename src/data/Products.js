@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     title: 'Nike Air Max x Travis Scott ',
-    img: 'src/assets/sneakers/nike/nike_ft_travis_scott.png',
+    img: 'https://github.com/Candeb/JSX-STORE/blob/main/src/assets/sneakers/nike/nike_ft_travis_scott.png?raw=true',
     descr: 'Air Max 1 low-top sneakers',
     price: 540,
     category: 'Nike',
