@@ -268,7 +268,7 @@ export const products = [
   {
     id: 34,
     title: 'Adidas x Bad Bunny Easter Egg',
-    img: 'src/assets/sneakers/adidas/Forum Low Easter Egg de adidas x Bad Bunny.png',
+    img: 'https://github.com/Candeb/JSX-STORE/blob/main/src/assets/sneakers/adidas/Forum%20Buckle%20Low%20de%20adidas%20x%20Bad%20Bunny.png',
     descr: "Adidas x Bad Bunny Forum Low 'Easter Egg' sneakers",
     price: 1095,
     category: 'Adidas',
