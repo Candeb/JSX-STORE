@@ -4,9 +4,22 @@ import { BtnShopCard } from '../Featured/FeaturedStyles';
 export const ContainerSubs = styled.div`
   background-color: #150b04;
   width: 100%;
-  height: 60vh;
+  min-height: 60vh;
   padding: 60px 0px;
   display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+  }
 `;
 
 export const ContainerTextSubs = styled.div`
@@ -17,8 +30,13 @@ export const ContainerTextSubs = styled.div`
   justify-content: center;
   align-items: flex-end;
   color: #f5f5f5;
-  padding: 0px 25px;
+  padding: 25px;
   text-align: end;
+
+  @media screen and (max-width: 550px) {
+    text-align: center;
+    width: 90%;
+  }
 `;
 
 export const TitleSubs = styled.p`
@@ -34,13 +52,17 @@ export const ContainerFormSubs = styled.div`
   justify-content: center;
   align-items: center;
   padding: 20px;
+
+  @media screen and (max-width: 550px) {
+    text-align: center;
+    width: 90%;
+  }
 `;
 
 export const FormSubs = styled.form`
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 20px;
   justify-content: center;
   align-items: center;
 `;
@@ -53,6 +75,7 @@ export const InputEmail = styled.input`
   border: none;
   cursor: pointer;
   transition: 0.5s all ease;
+  text-align: center;
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.6) 1px 9px 17px 0px;

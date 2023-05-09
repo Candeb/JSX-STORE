@@ -7,28 +7,24 @@ import {
   MobileIcon,
   NavBar,
   NavBarLinks,
-  QuantityProductsCart,
   Wrapper,
 } from './HeaderStyles';
 import {
-  IoSearchOutline,
-  IoBagOutline,
   IoPersonOutline,
   IoMenuOutline,
   IoCloseOutline,
 } from 'react-icons/io5';
 import ModalCart from './Cart/ModalCart';
 import * as cartActions from '../../redux/cart/cart-actions';
-import { useDispatch, useSelector } from 'react-redux';
 import { CartIcon } from './Cart/CartIcon';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
-  const [showMobileMenu, setshowMobileMenu] = useState(false);
-  const [showSearchBar, setshowSearchBar] = useState(false);
-  const dispatch = useDispatch();
+  const [click, setClick] = useState(false);
 
-  const navigate = useNavigate();
+  const handlerMenu = () => {
+    setClick(!click);
+  };
 
   return (
     <Container>
@@ -42,21 +38,13 @@ export const Header = () => {
           </LogoContainer>
         </Link>
 
-        <NavBar open={showMobileMenu}>
+        <NavBar click={click}>
           <Link to="/">
-            <NavBarLinks onClick={() => setshowMobileMenu(!showMobileMenu)}>
-              Home
-            </NavBarLinks>
+            <NavBarLinks onClick={() => handlerMenu()}>Home</NavBarLinks>
           </Link>
-          <Link to="/login">
-            <NavBarLinks onClick={() => setshowMobileMenu(!showMobileMenu)}>
-              Login
-            </NavBarLinks>
-          </Link>
+          <NavBarLinks onClick={() => handlerMenu()}>Sneakers</NavBarLinks>
 
-          <NavBarLinks onClick={() => setshowMobileMenu(!showMobileMenu)}>
-            Suscribite
-          </NavBarLinks>
+          <NavBarLinks onClick={() => handlerMenu()}>Suscribite</NavBarLinks>
         </NavBar>
 
         <Menu>
@@ -66,8 +54,8 @@ export const Header = () => {
           <MenuIcon>
             <IoPersonOutline />
           </MenuIcon>
-          <MobileIcon onClick={() => setshowMobileMenu(!showMobileMenu)}>
-            {showMobileMenu ? <IoCloseOutline /> : <IoMenuOutline />}
+          <MobileIcon onClick={() => handlerMenu()}>
+            {click ? <IoCloseOutline /> : <IoMenuOutline />}
           </MobileIcon>
         </Menu>
       </Wrapper>

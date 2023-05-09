@@ -16,7 +16,9 @@ export const CardProduct = ({ title, img, descr, price, id }) => {
 
   return (
     <ContainerCardProduct>
-      <ContainerCardImg src={img} alt={title} />
+      <ContainerCardImg>
+        <img src={img} alt={title} />
+      </ContainerCardImg>
       <ContainerCardInfoProduct>
         <NameCardProduct> {title} </NameCardProduct>
         <DescCardProduct>{descr}</DescCardProduct>

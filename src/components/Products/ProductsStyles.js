@@ -85,13 +85,19 @@ export const ContainerCardProduct = styled.div`
   }
 `;
 
-export const ContainerCardImg = styled.img`
-  width: 80%;
-  height: 80%;
-  transition: 0.5s all ease;
-  object-fit: contain;
-  margin: 0 auto;
-  min-height: 150px;
+export const ContainerCardImg = styled.div`
+  width: 185px;
+  transition: all 0.5s ease 0s;
+  margin: 0px auto;
+  height: 150px;
+  display: flex;
+  align-items: center;
+
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
 `;
 
 export const ContainerCardInfoProduct = styled.div`

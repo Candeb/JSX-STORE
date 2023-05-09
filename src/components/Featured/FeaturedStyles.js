@@ -65,8 +65,8 @@ export const ContainerCardFeatured = styled.div`
   &:hover {
     box-shadow: rgb(0 0 0 / 60%) 1px 9px 17px 0px;
     cursor: pointer;
-    transition: 0.5s all ease-in;
-    background-color: #e3e3e3;
+    background-color: white;
+    transition: 0.8s all ease;
   }
 `;
 

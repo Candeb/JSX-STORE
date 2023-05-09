@@ -12,6 +12,13 @@ export const ContainerFooterByParts = styled.div`
   display: flex;
   justify-content: space-around;
   gap: 60px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
 `;
 
 export const ContainerFooterInfo = styled.div`

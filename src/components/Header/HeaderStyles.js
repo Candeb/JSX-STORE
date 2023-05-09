@@ -39,7 +39,7 @@ export const NavBar = styled.ul`
   @media screen and (max-width: 960px) {
     position: absolute;
     top: 100px;
-    right: ${({ open }) => (open ? '0' : '-100%')};
+    left: ${({ click }) => (click ? 0 : '-100%')};
     width: 100%;
     height: 90vh;
     flex-direction: column;

@@ -15,6 +15,10 @@ export const ModalOverlayStyled = styled(motion.div)`
     css`
       backdrop-filter: blur(5px);
     `}
+
+  @media screen and (max-width: 450px) {
+    display: none;
+  }
 `;
 
 // cart
@@ -30,6 +34,11 @@ export const ContainerCart = styled.div`
   height: 100vh;
   padding: 1.6rem;
   z-index: 99;
+
+  @media screen and (max-width: 450px) {
+    width: 100vw;
+    height: 100vh;
+  }
 `;
 
 export const ContainerButtons = styled.div`
@@ -156,7 +165,7 @@ export const TextEmptyCart = styled.span`
 export const CardProductCart = styled.div`
   display: flex;
   gap: 15px;
-  padding: 10px 0px;
+  padding: 10px;
   width: 90%;
   align-items: center;
   border-bottom: 1px solid #e3e3e3;
@@ -164,9 +173,14 @@ export const CardProductCart = styled.div`
 `;
 
 export const ImgProductCart = styled.div`
-  height: 2.7em;
+  width: 80px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const DescriptionProductCart = styled.div`

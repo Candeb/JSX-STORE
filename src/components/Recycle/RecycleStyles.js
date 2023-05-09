@@ -3,10 +3,14 @@ import styled from 'styled-components';
 export const ContainerRecycle = styled.div`
   display: flex;
   background-color: #150b04;
-  height: 70vh;
   padding: 30px;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  min-height: 400px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const ContainerCardRecycle = styled.div`
@@ -23,6 +27,7 @@ export const OptionsRecycle = styled.li`
   padding: 18px;
   font-weight: 600;
   transition: 0.5s all ease;
+  text-decoration: none;
 
   &:hover {
     background-color: #f5f5f5;
@@ -37,6 +42,7 @@ export const ContainerTitleRecycle = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0px 25px;
 `;
 
 export const TitleRecycle = styled.p`
