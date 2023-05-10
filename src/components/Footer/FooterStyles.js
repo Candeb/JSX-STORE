@@ -6,6 +6,7 @@ export const ContainerFooter = styled.div`
   padding: 30px;
   width: 100vw;
   font-family: 'Barlow', sans-serif;
+  box-shadow: 0px 3px 9px #797979;
 `;
 
 export const ContainerFooterByParts = styled.div`

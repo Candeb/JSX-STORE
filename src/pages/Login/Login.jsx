@@ -7,23 +7,44 @@ import {
   InputFormLogin,
   BtnSubmit,
   ForgotPassword,
+  TitleLogin,
+  ContainerSubtitleLogin,
+  SubtitleLogin,
 } from './LoginStyles';
+import { HeaderUser } from '../../components/Header/HeaderUser';
+HeaderUser;
+import { Link } from 'react-router-dom';
 
 export const Login = () => {
   return (
-    <ContainerLogin>
-      <ContainerFormLogin>
-        <Container>
-          <LabelInputForm> nombre </LabelInputForm>
-          <InputFormLogin />
-        </Container>
-        <Container>
-          <LabelInputForm> contraseña </LabelInputForm>
-          <InputFormLogin />
-        </Container>
-        <BtnSubmit> iniciar sesion </BtnSubmit>
-        <ForgotPassword>Olvide mi contraseña</ForgotPassword>
-      </ContainerFormLogin>
-    </ContainerLogin>
+    <>
+      <HeaderUser />{' '}
+      <ContainerLogin>
+        <TitleLogin>Ingresa a JSX STORE</TitleLogin>
+        <ContainerSubtitleLogin>
+          <p>Aún no tienes cuenta?</p>
+
+          <Link to="/register">
+            <SubtitleLogin> CREAR </SubtitleLogin>
+          </Link>
+        </ContainerSubtitleLogin>
+        <ContainerFormLogin>
+          <Container>
+            <LabelInputForm> usuario </LabelInputForm>
+            <InputFormLogin type="email" />
+          </Container>
+          <Container>
+            <LabelInputForm> contraseña </LabelInputForm>
+            <InputFormLogin type="password" />
+          </Container>
+          <Link to="/">
+            <BtnSubmit> iniciar sesión </BtnSubmit>
+          </Link>
+          <Link to="/forgotpassword">
+            <ForgotPassword>Olvidé mi contraseña</ForgotPassword>
+          </Link>
+        </ContainerFormLogin>
+      </ContainerLogin>
+    </>
   );
 };

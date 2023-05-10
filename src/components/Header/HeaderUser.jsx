@@ -19,7 +19,7 @@ import * as cartActions from '../../redux/cart/cart-actions';
 import { CartIcon } from './Cart/CartIcon';
 import { Link } from 'react-router-dom';
 
-export const Header = () => {
+export const HeaderUser = () => {
   const [click, setClick] = useState(false);
 
   const handlerMenu = () => {
@@ -47,21 +47,9 @@ export const Header = () => {
           <NavBarLinks onClick={() => handlerMenu()}>Suscribite</NavBarLinks>
         </NavBar>
 
-        <Menu>
-          <CartIcon />
-
-          <ModalCart />
-
-          <Link to="/login">
-            <MenuIcon>
-              <IoPersonOutline />
-            </MenuIcon>
-          </Link>
-
-          <MobileIcon onClick={() => handlerMenu()}>
-            {click ? <IoCloseOutline /> : <IoMenuOutline />}
-          </MobileIcon>
-        </Menu>
+        <MobileIcon onClick={() => handlerMenu()}>
+          {click ? <IoCloseOutline /> : <IoMenuOutline />}
+        </MobileIcon>
       </Wrapper>
     </Container>
   );

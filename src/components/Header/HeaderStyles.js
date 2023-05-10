@@ -18,9 +18,8 @@ export const Wrapper = styled.header`
   height: 100%;
   width: 100%;
   max-width: 1300px;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 // contenedor de logo
@@ -35,6 +34,7 @@ export const LogoContainer = styled.div`
 export const NavBar = styled.ul`
   display: flex;
   gap: 30px;
+  margin: 0 auto;
 
   @media screen and (max-width: 960px) {
     position: absolute;

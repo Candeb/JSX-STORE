@@ -101,14 +101,17 @@ const ModalCart = () => {
               </ContainerSubtotalCart>
             </ContainerInfoPrices>
 
-            <ContainerTotalCart>
-              <ContainerTextInfo>Total:</ContainerTextInfo>
+            <ContainerTotalCart hidden={totalPrice > 1}>
+              <ContainerTextInfo none={!cartItems.length}>
+                Total:
+              </ContainerTextInfo>
               <ContainerTextInfo>
                 {' '}
                 {formatPrice(totalPrice + shippingCost)}{' '}
               </ContainerTextInfo>
             </ContainerTotalCart>
-            <BtnShop>Continuar la compra</BtnShop>
+
+            <BtnShop disabled={!cartItems.length}>Continuar la compra</BtnShop>
           </ContainerCart>
         )}
       </AnimatePresence>

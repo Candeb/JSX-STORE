@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { Header } from '../../components/Header/Header';
 import { Hero } from '../../components/Hero/Hero';
 import { Recycle } from '../../components/Recycle/Recycle';
 import { Featured } from '../../components/Featured/Featured';
@@ -21,6 +22,7 @@ export const Home = () => {
 
   return (
     <HomeWrapper>
+      <Header />
       <Hero doScroll={doScroll} />
       <Recycle />
       <Featured />

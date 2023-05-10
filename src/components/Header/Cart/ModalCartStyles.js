@@ -129,6 +129,16 @@ const BtnShop = styled.button`
   letter-spacing: 2px;
   color: #150b04;
 
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: transparent;
+      color: #150b04;
+    }
+  }
+
   &:hover {
     background-color: #150b04;
     color: #f5f5f5;
