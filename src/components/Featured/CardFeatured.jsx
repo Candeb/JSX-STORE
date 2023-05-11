@@ -21,18 +21,21 @@ export const CardFeatured = ({ id, title, img, price }) => {
     cambiarEstadoModal(!estadoModal1);
     setTimeout(() => {
       cambiarEstadoModal(false);
-    }, 2000);
+    }, 1000);
   };
 
   return (
-    <ContainerCardFeatured>
-      <ContainerImg src={img} alt={title} />
-      <ContainerInfoCard>
-        <TitleCard>{title}</TitleCard>
-        <PriceCard>{formatPrice(price)}</PriceCard>
-      </ContainerInfoCard>
-      <BtnShopCard onClick={handlerModal}>Comprar</BtnShopCard>
+    <>
+      {' '}
+      <ContainerCardFeatured>
+        <ContainerImg src={img} alt={title} />
+        <ContainerInfoCard>
+          <TitleCard>{title}</TitleCard>
+          <PriceCard>{formatPrice(price)}</PriceCard>
+        </ContainerInfoCard>
+        <BtnShopCard onClick={handlerModal}>Comprar</BtnShopCard>
+      </ContainerCardFeatured>{' '}
       <ModalMessage estado={estadoModal1} cambiarEstado={cambiarEstadoModal} />
-    </ContainerCardFeatured>
+    </>
   );
 };

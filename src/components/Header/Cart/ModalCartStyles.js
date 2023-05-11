@@ -23,16 +23,13 @@ export const ModalOverlayStyled = styled(motion.div)`
 
 // cart
 
-export const ContainerCart = styled.div`
+export const ContainerCartWrapper = styled.div`
   background-color: #f5f5f5;
   position: fixed;
-  width: 40vw;
-  min-width: 400px;
+  width: 45vw;
   top: 0;
   right: 0;
-  flex-direction: column;
   height: 100vh;
-  padding: 1.6rem;
   z-index: 99;
   scroll-behavior: smooth;
   overflow-y: scroll;
@@ -40,13 +37,24 @@ export const ContainerCart = styled.div`
   @media screen and (max-width: 550px) {
     width: 100vw;
     height: 100%;
-    padding: 20px;
+    padding: 10px;
   }
+`;
+
+export const ContainerCart = styled.div`
+  margin: 0 auto;
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
 `;
 
 export const ContainerButtons = styled.div`
   display: flex;
   justify-content: space-between;
+  width: 100%;
   @media screen and (max-width: 550px) {
     padding: 0px 20px;
   }
@@ -88,18 +96,20 @@ export const ContainerProducts = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 60%;
+  height: 60vh;
   margin: auto;
   scroll-behavior: smooth;
   overflow-y: scroll;
   align-items: center;
   cursor: auto;
+  overflow-x: hidden;
 `;
 
 export const ContainerInfoPrices = styled.div`
   display: flex;
   flex-direction: column;
   padding: 10px 0px;
+  width: 100%;
 
   @media screen and (max-width: 550px) {
     width: 80%;
@@ -114,6 +124,7 @@ export const ContainerSubtotalCart = styled.div`
   font-family: 'Kanit', sans-serif;
   font-weight: 400;
   padding: 5px 10px;
+  width: 100%;
 `;
 
 export const ContainerTotalCart = styled.div`
@@ -123,6 +134,7 @@ export const ContainerTotalCart = styled.div`
   font-family: 'Kanit', sans-serif;
   font-weight: 600;
   padding: 10px 0px;
+  width: 100%;
 
   @media screen and (max-width: 550px) {
     width: 80%;
@@ -153,6 +165,7 @@ const BtnShop = styled.button`
 
   @media screen and (max-width: 550px) {
     width: 80%;
+    font-size: 15px;
   }
 
   &:disabled {
@@ -201,8 +214,8 @@ export const TextEmptyCart = styled.span`
 export const CardProductCart = styled.div`
   display: flex;
   gap: 15px;
-  padding: 10px;
-  width: 90%;
+  padding: 10px 0px;
+  width: 100%;
   align-items: center;
   border-bottom: 1px solid #e3e3e3;
   justify-content: center;
@@ -232,6 +245,10 @@ export const DescriptionProductCart = styled.div`
   flex-direction: column;
   width: 70%;
   gap: 10px;
+
+  @media screen and (max-width: 370px) {
+    gap: 5px;
+  }
 `;
 
 export const TitleProductCart = styled.div`
@@ -242,7 +259,7 @@ export const TitleProductCart = styled.div`
   font-weight: 600;
 `;
 export const TextDescriptionProductCart = styled.span`
-  font-size: 11px;
+  font-size: 10px;
   color: #373739b8;
   font-weight: 600;
 `;
@@ -250,13 +267,16 @@ export const TextDescriptionProductCart = styled.span`
 export const ContainerQuantityPrice = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-  padding-right: 10px;
+
+  @media screen and (max-width: 370px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 
 export const ContainerQuantityProduct = styled.div`
   display: flex;
-  gap: 8px;
+  gap: 5px;
   align-items: center;
 `;
 
@@ -279,7 +299,7 @@ export const BtnQuantity = styled.button`
 `;
 
 export const PriceProductCart = styled.span`
-  font-size: 15px;
+  font-size: 14px;
   color: #150b04;
   display: flex;
   align-items: center;

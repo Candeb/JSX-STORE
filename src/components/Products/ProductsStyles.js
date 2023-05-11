@@ -207,7 +207,6 @@ export const ContainerModalMessage = styled.div`
   background-color: #0000006b;
   z-index: 999;
   padding: 20px;
-  transition: 0.5s all ease;
 `;
 
 export const BoxModalMessage = styled.div`
@@ -220,5 +219,4 @@ export const BoxModalMessage = styled.div`
   z-index: 999;
   display: flex;
   gap: 10px;
-  transition: 0.5s all ease;
 `;
