@@ -10,12 +10,14 @@ export const Categoria = ({ category, img }) => {
   const dispatch = useDispatch();
 
   return (
-    <CardCategoria
-      selected={category === selectedCategory}
-      onClick={() => dispatch(categoriesActions.selectCategory(category))}
-      whileTap={{ scale: 0.95 }}
-    >
-      <CardCategoriaImg src={img} alt="" />
-    </CardCategoria>
+    <a href="#sneakers">
+      <CardCategoria
+        selected={category === selectedCategory}
+        onClick={() => dispatch(categoriesActions.selectCategory(category))}
+        whileTap={{ scale: 0.95 }}
+      >
+        <CardCategoriaImg src={img} alt="" />
+      </CardCategoria>
+    </a>
   );
 };
