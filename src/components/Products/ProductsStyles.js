@@ -202,9 +202,9 @@ export const ContainerModalMessage = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  background-color: transparent;
+  background-color: #0000006b;
   z-index: 999;
   padding: 20px;
   transition: 0.5s all ease;

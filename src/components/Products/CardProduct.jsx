@@ -22,7 +22,7 @@ export const CardProduct = ({ title, img, descr, price, id }) => {
     cambiarEstadoModal(!estadoModal1);
     setTimeout(() => {
       cambiarEstadoModal(false);
-    }, 2000);
+    }, 1000);
   };
 
   return (
