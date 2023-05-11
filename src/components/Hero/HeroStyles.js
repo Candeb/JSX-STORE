@@ -30,7 +30,7 @@ export const TitleHero = styled.h2`
   font-size: 1em;
   cursor: pointer;
   padding: 10px 0px;
-  transition: 0.6s all ease;
+  transition: 0.7s all ease;
   width: 100%;
   text-align: center;
   letter-spacing: 2px;
@@ -44,7 +44,7 @@ export const TitleHero = styled.h2`
   }
 
   &:hover {
-    transition: 2s all ease;
-    text-shadow: 1px 1px 10px #ae5052;
+    transition: all 0.7s ease 0s;
+    text-shadow: rgb(238 238 59) 0px 0px 20px;
   }
 `;

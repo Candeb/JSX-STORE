@@ -128,4 +128,8 @@ export const BtnShopCard = styled(BtnShop)`
   padding: 8px 15px;
 
   width: 100%;
+
+  @media screen and (max-width: 550px) {
+    font-size: 11.5px;
+  }
 `;

@@ -6,4 +6,8 @@ export const LayoutWrapper = styled.div`
   display: flex;
   flex-direction: column;
   background-color: black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 `;

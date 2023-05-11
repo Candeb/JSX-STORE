@@ -6,7 +6,7 @@ export const ContainerFooter = styled.div`
   padding: 30px;
   width: 100vw;
   font-family: 'Barlow', sans-serif;
-  box-shadow: 0px 3px 9px #797979;
+  border-top: 1px solid #797979;
 `;
 
 export const ContainerFooterByParts = styled.div`
@@ -63,6 +63,11 @@ export const ContainerFooterNavLinks = styled.div`
   align-items: center;
   gap: 40px;
   padding: 30px;
+
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 
 export const FooterNavBarLinks = styled(ItemsFooter)`

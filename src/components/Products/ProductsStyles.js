@@ -19,7 +19,8 @@ export const ContainerTitles = styled.div`
   min-height: 150px;
   justify-content: center;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 760px) {
+    min-height: 100px;
   }
 `;
 
@@ -69,7 +70,7 @@ export const ChosenCategory = styled.p`
   }
   @media screen and (max-width: 460px) {
     width: 90vw;
-    font-size: 45px;
+    font-size: 40px;
     margin: 0 AUTO;
   }
 `;
@@ -86,6 +87,7 @@ export const ContainerCardsProducts = styled.div`
     gap: 10px;
     padding: 0px;
     width: 100vw;
+    padding-bottom: 25px;
   }
 `;
 
@@ -94,6 +96,10 @@ export const ContainerButtons = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
+
+  @media screen and (max-width: 600px) {
+    width: 90vw;
+  }
 `;
 
 export const ButtonVer = styled(BtnShopCard)`
@@ -130,7 +136,7 @@ export const ContainerCardProduct = styled.div`
 
   @media screen and (max-width: 600px) {
     width: 45vw;
-    height: 365px;
+    min-height: 365px;
   }
 `;
 
@@ -163,7 +169,8 @@ export const ContainerCardInfoProduct = styled.div`
   line-height: 15px;
 
   @media screen and (max-width: 600px) {
-    min-height: 105px;
+    height: 150px;
+    justify-content: space-between;
   }
 `;
 
@@ -176,6 +183,7 @@ export const NameCardProduct = styled(TitleCard)`
 
   @media screen and (max-width: 600px) {
     font-size: 0.9em;
+    height: auto;
   }
 `;
 
