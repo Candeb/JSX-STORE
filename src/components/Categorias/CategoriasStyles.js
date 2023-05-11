@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ContainerCategorias = styled.div`
   background-color: #e3e3e3;
-  height: 30vw;
+  height: auto;
   padding: 10px;
 `;
 
@@ -16,6 +16,12 @@ export const TitleCategoria = styled.p`
   text-transform: uppercase;
   text-shadow: 1px 2px 4px #797979;
   transition: 0.5s all ease;
+
+  @media screen and (max-width: 650px) {
+    font-size: 25px;
+    width: 90vw;
+    padding: 40px 20px;
+  }
 `;
 
 export const ContainerCardsCategorias = styled.div`
@@ -25,6 +31,12 @@ export const ContainerCardsCategorias = styled.div`
   gap: 30px;
   padding: 30px;
   transition: 0.5s all ease;
+
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const CardCategoria = styled.div`
@@ -35,6 +47,11 @@ export const CardCategoria = styled.div`
   width: 20vw;
   transition: 0.5s all ease;
   height: 122px;
+
+  @media screen and (max-width: 650px) {
+    width: 80%;
+    height: 95px;
+  }
 
   &:hover {
     box-shadow: #2d2d2c94 3px 4px 10px;

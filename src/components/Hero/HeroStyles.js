@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const ContainerHero = styled.div`
   display: flex;
-  height: 85vh;
+  height: 90vh;
   justify-content: center;
+  padding: 30px 0px;
 `;
 
 export const ContainerDivsHero = styled.div`
@@ -17,10 +18,10 @@ export const ContainerDivsHero = styled.div`
   transition: 0.6s all ease;
 `;
 export const ContainerDivHeroImg = styled(ContainerDivsHero)`
-  background-image: url('https://github.com/Candeb/JSX-STORE/blob/main/src/assets/fondoyellow.png?raw=true');
+  background-image: url('https://github.com/Candeb/JSX-STORE/blob/main/src/assets/fondo2hero.png?raw=true');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom;
+  background-position: center;
   transition: 0.6s all ease;
 `;
 
@@ -32,6 +33,15 @@ export const TitleHero = styled.h2`
   transition: 0.6s all ease;
   width: 100%;
   text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 0px -3px 5px #ef3f97;
+
+  @media screen and (max-width: 638px) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: 430px) {
+    font-size: 35px;
+  }
 
   &:hover {
     transition: 2s all ease;

@@ -34,16 +34,22 @@ export const ContainerCart = styled.div`
   height: 100vh;
   padding: 1.6rem;
   z-index: 99;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 550px) {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+    padding: 20px;
   }
 `;
 
 export const ContainerButtons = styled.div`
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 550px) {
+    padding: 0px 20px;
+  }
 `;
 
 export const BtnCloseCart = styled(motion.button)`
@@ -71,6 +77,11 @@ export const TitleCart = styled.p`
   padding: 5px;
   letter-spacing: 1px;
   font-weight: 900;
+  margin: 0 auto;
+  align-items: center;
+
+  @media screen and (max-width: 550px) {
+  }
 `;
 
 export const ContainerProducts = styled.div`
@@ -88,6 +99,12 @@ export const ContainerProducts = styled.div`
 export const ContainerInfoPrices = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 10px 0px;
+
+  @media screen and (max-width: 550px) {
+    width: 80%;
+    margin: 0 auto;
+  }
 `;
 
 export const ContainerSubtotalCart = styled.div`
@@ -106,6 +123,11 @@ export const ContainerTotalCart = styled.div`
   font-family: 'Kanit', sans-serif;
   font-weight: 600;
   padding: 10px 0px;
+
+  @media screen and (max-width: 550px) {
+    width: 80%;
+    margin: 0 auto;
+  }
 `;
 
 export const ContainerTextInfo = styled.span`
@@ -128,6 +150,10 @@ const BtnShop = styled.button`
   font-weight: 800;
   letter-spacing: 2px;
   color: #150b04;
+
+  @media screen and (max-width: 550px) {
+    width: 80%;
+  }
 
   &:disabled {
     opacity: 0.6;
@@ -180,6 +206,10 @@ export const CardProductCart = styled.div`
   align-items: center;
   border-bottom: 1px solid #e3e3e3;
   justify-content: center;
+
+  @media screen and (max-width: 550px) {
+    padding: 15px;
+  }
 `;
 
 export const ImgProductCart = styled.div`
@@ -191,6 +221,10 @@ export const ImgProductCart = styled.div`
     width: 100%;
     height: 100%;
   }
+
+  @media screen and (max-width: 550px) {
+    width: 70px;
+  }
 `;
 
 export const DescriptionProductCart = styled.div`
@@ -201,10 +235,11 @@ export const DescriptionProductCart = styled.div`
 `;
 
 export const TitleProductCart = styled.div`
-  font-size: 11px;
-  color: #150b04;
+  font-size: 12px;
+  color: black;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  font-weight: 600;
 `;
 export const TextDescriptionProductCart = styled.span`
   font-size: 11px;

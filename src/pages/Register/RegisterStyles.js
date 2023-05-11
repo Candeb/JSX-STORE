@@ -6,6 +6,12 @@ export const ContainerRegister = styled.div`
   color: white;
   justify-content: center;
   padding: 0px 30px;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const ContainerImgRegister = styled.div`
@@ -15,6 +21,10 @@ export const ContainerImgRegister = styled.div`
   & img {
     transition: 0.5s all ease;
     height: 350px;
+
+    @media screen and (max-width: 700px) {
+      height: 280px;
+    }
 
     &:hover {
       transform: rotateY(180deg);

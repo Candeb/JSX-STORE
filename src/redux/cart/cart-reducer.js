@@ -15,6 +15,7 @@ const INITIAL_STATE = {
   cartItems: [],
   shippingCost: 0,
   hidden: true,
+  modal: false,
 };
 
 const cartReducer = (state = INITIAL_STATE, action) => {
@@ -24,6 +25,7 @@ const cartReducer = (state = INITIAL_STATE, action) => {
         ...state,
         cartItems: addItemToCart(state.cartItems, action.payload),
         shippingCost: SHIPPING_COST,
+        modal: true,
       };
 
     case REMOVE_FROM_CART:

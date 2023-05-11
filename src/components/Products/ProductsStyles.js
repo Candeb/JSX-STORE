@@ -9,7 +9,7 @@ export const ContainerProducts = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 70px 20px;
+  padding: 40px 20px;
 `;
 
 export const ContainerTitles = styled.div`
@@ -20,7 +20,6 @@ export const ContainerTitles = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 960px) {
-    min-height: 380px;
   }
 `;
 
@@ -29,6 +28,17 @@ export const TitleProducts = styled(TitleCategoria)`
   text-align: center;
   text-shadow: #2d2d2c94 3px 4px 10px;
   padding: 0px;
+
+  @media screen and (max-width: 950px) {
+    width: 90vw;
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 550px) {
+    line-height: 35px;
+    width: 100vw;
+    font-size: 20px;
+  }
 `;
 
 export const ChosenCategory = styled.p`
@@ -39,6 +49,29 @@ export const ChosenCategory = styled.p`
   font-weight: 600;
   text-transform: uppercase;
   transition: 0.5s all ease;
+
+  @media screen and (max-width: 950px) {
+    width: 90vw;
+    font-size: 100px;
+  }
+  @media screen and (max-width: 790px) {
+    width: 90vw;
+    font-size: 90px;
+  }
+  @media screen and (max-width: 700px) {
+    width: 90vw;
+    font-size: 70px;
+  }
+  @media screen and (max-width: 550px) {
+    width: 90vw;
+    font-size: 55px;
+    margin: 0 AUTO;
+  }
+  @media screen and (max-width: 460px) {
+    width: 90vw;
+    font-size: 35px;
+    margin: 0 AUTO;
+  }
 `;
 
 export const ContainerCardsProducts = styled.div`
@@ -121,4 +154,34 @@ export const DescCardProduct = styled.p`
   font-size: 0.8em;
   color: #797979;
   min-height: 30px;
+`;
+
+// modal
+
+export const ContainerModalMessage = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: transparent;
+  z-index: 999;
+  padding: 20px;
+  transition: 0.5s all ease;
+`;
+
+export const BoxModalMessage = styled.div`
+  color: white;
+  font-size: 15px;
+  background-color: black;
+  padding: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  z-index: 999;
+  display: flex;
+  gap: 10px;
+  transition: 0.5s all ease;
 `;

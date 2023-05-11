@@ -10,6 +10,7 @@ export const ContainerRecycle = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    padding: 50px;
   }
 `;
 
@@ -43,6 +44,11 @@ export const ContainerTitleRecycle = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0px 25px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 30px;
+  }
 `;
 
 export const TitleRecycle = styled.p`
@@ -58,4 +64,5 @@ export const ContainerSloganRecycle = styled.div`
   color: #797979;
   letter-spacing: 2px;
   font-size: 10px;
+  text-align: center;
 `;

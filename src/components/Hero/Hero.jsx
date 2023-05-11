@@ -5,7 +5,6 @@ import {
   TitleHero,
   ContainerDivHeroImg,
 } from './HeroStyles';
-
 export const Hero = () => {
   return (
     <ContainerHero>

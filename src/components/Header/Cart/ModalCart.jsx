@@ -22,6 +22,7 @@ import { ModalCartCard } from './ModalCartCard';
 import { useDispatch, useSelector } from 'react-redux';
 import { formatPrice } from '../../../utils';
 import { AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const ModalCart = () => {
   const { cartItems, shippingCost } = useSelector((state) => state.cart);
@@ -38,6 +39,11 @@ const ModalCart = () => {
   const totalPrice = cartItems.reduce((acc, item) => {
     return (acc += item.price * item.quantity);
   }, 0);
+
+  const shop = () => {
+    dispatch(cartActions.clearCart());
+    window.alert('¡Compra realizada con éxito!');
+  };
 
   return (
     <>
@@ -101,7 +107,7 @@ const ModalCart = () => {
               </ContainerSubtotalCart>
             </ContainerInfoPrices>
 
-            <ContainerTotalCart hidden={totalPrice > 1}>
+            <ContainerTotalCart>
               <ContainerTextInfo none={!cartItems.length}>
                 Total:
               </ContainerTextInfo>
@@ -111,7 +117,9 @@ const ModalCart = () => {
               </ContainerTextInfo>
             </ContainerTotalCart>
 
-            <BtnShop disabled={!cartItems.length}>Continuar la compra</BtnShop>
+            <BtnShop disabled={!cartItems.length} onClick={shop}>
+              Continuar la compra
+            </BtnShop>
           </ContainerCart>
         )}
       </AnimatePresence>

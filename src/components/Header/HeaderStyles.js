@@ -27,6 +27,7 @@ export const Wrapper = styled.header`
 export const LogoContainer = styled.div`
   height: 70px;
   display: flex;
+  transition: 0.5s all ease;
 `;
 
 // contenedor de items/rutas/menu hamburguesa

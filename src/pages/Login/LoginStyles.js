@@ -24,7 +24,7 @@ export const TitleLogin = styled.p`
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
-  padding: 20px 20px 0px 20px;
+  padding: 20px;
   color: #f5f5f5;
 `;
 
@@ -60,6 +60,9 @@ export const SubtitleLogin = styled.div`
   &:hover:after {
     left: 0;
   }
+  &:active:after {
+    left: 0;
+  }
 `;
 
 export const ContainerFormLogin = styled.div`
@@ -86,7 +89,7 @@ export const InputFormLogin = styled.input`
   background-color: #797979;
   color: black;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   border: none;
   cursor: pointer;
 

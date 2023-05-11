@@ -36,6 +36,10 @@ export const TitleFeatured = styled.div`
   letter-spacing: 3px;
   text-shadow: 3px 4px 10px black;
   text-align: center;
+
+  @media screen and (max-width: 550px) {
+    font-size: 30px;
+  }
 `;
 
 export const ContainerCardsFeatured = styled.div`
@@ -44,6 +48,10 @@ export const ContainerCardsFeatured = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
+
+  @media screen and (max-width: 550px) {
+    width: 70vw;
+  }
 `;
 
 // --
@@ -62,6 +70,11 @@ export const ContainerCardFeatured = styled.div`
   width: 25vw;
   height: 320px;
 
+  @media screen and (max-width: 550px) {
+    height: 300px;
+    width: 100%;
+  }
+
   &:hover {
     box-shadow: rgb(0 0 0 / 60%) 1px 9px 17px 0px;
     cursor: pointer;
@@ -74,6 +87,10 @@ export const ContainerImg = styled.img`
   width: 60%;
   height: 50%;
   object-fit: contain;
+
+  @media screen and (max-width: 550px) {
+    width: 75%;
+  }
 `;
 
 export const ContainerInfoCard = styled.div`
