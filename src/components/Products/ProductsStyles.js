@@ -69,7 +69,7 @@ export const ChosenCategory = styled.p`
   }
   @media screen and (max-width: 460px) {
     width: 90vw;
-    font-size: 35px;
+    font-size: 45px;
     margin: 0 AUTO;
   }
 `;
@@ -81,6 +81,12 @@ export const ContainerCardsProducts = styled.div`
   align-items: center;
   gap: 20px;
   padding: 70px 20px;
+
+  @media screen and (max-width: 600px) {
+    gap: 10px;
+    padding: 0px;
+    width: 100vw;
+  }
 `;
 
 export const ContainerButtons = styled.div`
@@ -96,6 +102,11 @@ export const ButtonVer = styled(BtnShopCard)`
   &:disabled {
     cursor: not-allowed;
     opacity: 0.5;
+
+    &:hover {
+      color: rgb(245, 245, 245);
+      background-color: rgba(55, 55, 57, 0.72);
+    }
   }
 `;
 
@@ -116,6 +127,11 @@ export const ContainerCardProduct = styled.div`
     background-color: white;
     transition: 0.8s all ease;
   }
+
+  @media screen and (max-width: 600px) {
+    width: 45vw;
+    height: 365px;
+  }
 `;
 
 export const ContainerCardImg = styled.div`
@@ -131,6 +147,11 @@ export const ContainerCardImg = styled.div`
     width: 100%;
     object-fit: contain;
   }
+
+  @media screen and (max-width: 600px) {
+    max-width: 130px;
+    height: 150px;
+  }
 `;
 
 export const ContainerCardInfoProduct = styled.div`
@@ -140,6 +161,10 @@ export const ContainerCardInfoProduct = styled.div`
   align-items: flex-start;
   gap: 10px;
   line-height: 15px;
+
+  @media screen and (max-width: 600px) {
+    min-height: 105px;
+  }
 `;
 
 export const NameCardProduct = styled(TitleCard)`
@@ -148,6 +173,10 @@ export const NameCardProduct = styled(TitleCard)`
   text-align: left;
   height: 40px;
   line-height: 18px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 0.9em;
+  }
 `;
 
 export const DescCardProduct = styled.p`

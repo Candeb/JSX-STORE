@@ -27,7 +27,7 @@ export const Header = () => {
   };
 
   return (
-    <Container>
+    <Container name="home" id="home">
       <Wrapper>
         <Link to="/">
           <LogoContainer>
@@ -42,9 +42,12 @@ export const Header = () => {
           <Link to="/">
             <NavBarLinks onClick={() => handlerMenu()}>Home</NavBarLinks>
           </Link>
-          <NavBarLinks onClick={() => handlerMenu()}>Sneakers</NavBarLinks>
-
-          <NavBarLinks onClick={() => handlerMenu()}>Suscribite</NavBarLinks>
+          <a href="#sneakers">
+            <NavBarLinks onClick={() => handlerMenu()}>Sneakers</NavBarLinks>
+          </a>
+          <a href="#suscribe">
+            <NavBarLinks onClick={() => handlerMenu()}>Suscribite</NavBarLinks>
+          </a>
         </NavBar>
 
         <Menu>

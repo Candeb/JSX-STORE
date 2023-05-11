@@ -12,7 +12,7 @@ import {
 
 export const Subscription = () => {
   return (
-    <ContainerSubs>
+    <ContainerSubs name="suscribe" id="suscribe">
       <ContainerTextSubs>
         <TitleSubs>-10% EN TU PRIMER PEDIDO</TitleSubs>
         <DescCardProduct>

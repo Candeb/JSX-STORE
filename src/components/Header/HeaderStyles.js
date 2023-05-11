@@ -38,17 +38,23 @@ export const NavBar = styled.ul`
   margin: 0 auto;
 
   @media screen and (max-width: 960px) {
-    position: absolute;
+    position: fixed;
     top: 100px;
-    left: ${({ click }) => (click ? 0 : '-100%')};
+    right: ${({ click }) => (click ? 0 : '-100%')};
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
-    transition: 0.9s all ease;
-    background-color: #150b04;
-    justify-content: center;
+    transition: 0.7s all ease;
+    background-color: black;
+    justify-content: flex-start;
     gap: 0px;
+    z-index: 99;
+    padding: 50px 0px;
+
+    & a {
+      width: 100vw;
+    }
   }
 `;
 
@@ -82,7 +88,7 @@ export const NavBarLinks = styled.li`
     flex-wrap: wrap;
 
     &:hover {
-      color: #1a1d3b;
+      color: black;
       background-color: #f5f5f5;
       width: 100%;
       display: flex;
@@ -108,6 +114,7 @@ export const ContainerCartIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 `;
 
 // iconos

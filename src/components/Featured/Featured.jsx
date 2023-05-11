@@ -6,7 +6,6 @@ import {
 } from './FeaturedStyles';
 import { CardFeatured } from './CardFeatured';
 import { useSelector } from 'react-redux';
-// import { recommended } from '../../data/Recommended';
 
 export const Featured = () => {
   const recommended = useSelector((state) => state.recommended.recommended);

@@ -330,5 +330,3 @@ export const products = [
     category: 'Adidas',
   },
 ];
-
-export const TotalProducts = products.length;

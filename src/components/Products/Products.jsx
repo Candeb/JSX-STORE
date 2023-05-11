@@ -16,7 +16,7 @@ export const Products = () => {
   const [limit, setLimit] = useState(INITIAL_LIMIT);
 
   let products = useSelector((state) => state.products.products);
-  let totalProducts = useSelector((state) => state.products.totalProducts);
+  let totalProducts = products.length;
 
   const selectedCategory = useSelector(
     (state) => state.categories.selectedCategory
@@ -30,7 +30,7 @@ export const Products = () => {
   useEffect(() => setLimit(INITIAL_LIMIT), [selectedCategory]);
 
   return (
-    <ContainerProducts>
+    <ContainerProducts id="sneakers" name="sneakers">
       <ContainerTitles>
         <TitleProducts> NUESTROS PRODUCTOS</TitleProducts>
         <ChosenCategory>{selectedCategory} </ChosenCategory>
@@ -39,8 +39,9 @@ export const Products = () => {
         {products.map((producto, i) => {
           if (limit > i) {
             return <CardProduct key={producto.id} {...producto} />;
+          } else {
+            return null;
           }
-          return null;
         })}
       </ContainerCardsProducts>
 
@@ -53,8 +54,8 @@ export const Products = () => {
           Ver menos
         </ButtonVer>
         <ButtonVer
-          onClick={() => setLimit(limit + INITIAL_LIMIT)}
           disabled={totalProducts <= limit}
+          onClick={() => setLimit(limit + INITIAL_LIMIT)}
         >
           Ver mas
         </ButtonVer>

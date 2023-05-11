@@ -74,10 +74,21 @@ export const Footer = () => {
 
       <ContainerFooterByParts>
         <ContainerFooterNavLinks>
-          <FooterNavBarLinks>Home </FooterNavBarLinks>
-          <FooterNavBarLinks>Sneakers</FooterNavBarLinks>
-          <FooterNavBarLinks>Suscribite</FooterNavBarLinks>
-          <FooterNavBarLinks>Politica de Privacidad</FooterNavBarLinks>
+          <a href="#home">
+            <FooterNavBarLinks>Home </FooterNavBarLinks>
+          </a>
+
+          <a href="#sneakers">
+            {' '}
+            <FooterNavBarLinks>Sneakers</FooterNavBarLinks>
+          </a>
+          <a href="#suscribe">
+            {' '}
+            <FooterNavBarLinks>Suscribite</FooterNavBarLinks>
+          </a>
+          <a href="#">
+            <FooterNavBarLinks>Politica de Privacidad</FooterNavBarLinks>
+          </a>
         </ContainerFooterNavLinks>
       </ContainerFooterByParts>
 

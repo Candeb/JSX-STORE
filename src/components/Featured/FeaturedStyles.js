@@ -8,7 +8,7 @@ export const ContainerFeatured = styled.div`
   justify-content: center;
   align-items: center;
   padding: 75px 20px;
-  background-image: url('src/assets/fondoflashsale.jpg');
+  background-image: url('https://github.com/Candeb/JSX-STORE/blob/main/src/assets/fondoflashsale.jpg?raw=true');
   background-size: contain;
   background-repeat: repeat;
   background-attachment: fixed;
@@ -126,4 +126,6 @@ export const BtnShopCard = styled(BtnShop)`
   font-size: 13px;
   background-color: rgba(55, 55, 57, 0.72);
   padding: 8px 15px;
+
+  width: 100%;
 `;
