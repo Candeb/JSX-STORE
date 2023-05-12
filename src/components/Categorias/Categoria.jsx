@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardCategoria, CardCategoriaImg } from './CategoriasStyles';
+import { CardCategoria, CardCategoriaImg, LinkAhref } from './CategoriasStyles';
 import { useDispatch, useSelector } from 'react-redux';
 import * as categoriesActions from '../../redux/categories/categories-actions';
 
@@ -10,7 +10,7 @@ export const Categoria = ({ category, img }) => {
   const dispatch = useDispatch();
 
   return (
-    <a href="#sneakers">
+    <LinkAhref href="#sneakers">
       <CardCategoria
         selected={category === selectedCategory}
         onClick={() => dispatch(categoriesActions.selectCategory(category))}
@@ -18,6 +18,6 @@ export const Categoria = ({ category, img }) => {
       >
         <CardCategoriaImg src={img} alt="" />
       </CardCategoria>
-    </a>
+    </LinkAhref>
   );
 };

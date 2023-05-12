@@ -87,9 +87,6 @@ export const TitleCart = styled.p`
   font-weight: 900;
   margin: 0 auto;
   align-items: center;
-
-  @media screen and (max-width: 550px) {
-  }
 `;
 
 export const ContainerProducts = styled.div`

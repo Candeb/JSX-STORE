@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+export const LinkAhref = styled.a`
+  width: 20vw;
+  @media screen and (max-width: 650px) {
+    width: 70%;
+  }
+`;
+
 export const ContainerCategorias = styled.div`
   background-color: #e3e3e3;
   height: auto;
@@ -42,16 +49,10 @@ export const ContainerCardsCategorias = styled.div`
 export const CardCategoria = styled.div`
   padding: 20px;
   background-color: ${({ selected }) => (selected ? 'black' : '#797979')};
-  padding: 20px;
   cursor: pointer;
-  width: 20vw;
   transition: 0.5s all ease;
   height: 122px;
-
-  @media screen and (max-width: 650px) {
-    width: 80%;
-    height: 95px;
-  }
+  width: 100%;
 
   &:hover {
     box-shadow: #2d2d2c94 3px 4px 10px;

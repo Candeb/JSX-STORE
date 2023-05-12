@@ -40,6 +40,10 @@ export const TitleProducts = styled(TitleCategoria)`
     width: 100vw;
     font-size: 20px;
   }
+
+  @media screen and (max-width: 370px) {
+    font-size: 17px;
+  }
 `;
 
 export const ChosenCategory = styled.p`
@@ -72,6 +76,9 @@ export const ChosenCategory = styled.p`
     width: 90vw;
     font-size: 40px;
     margin: 0 AUTO;
+  }
+  @media screen and (max-width: 370px) {
+    font-size: 36px;
   }
 `;
 
